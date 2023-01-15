@@ -1,0 +1,44 @@
+#include <stdio.h>
+int main()
+{
+  int vet[10]={123,5,47,89,68,4,7,85,31,54};
+  int indice = 0;
+  int i,f,l,j,op;
+  int tamanho;
+  j=10;
+  //add numero ao vetor
+  /*do{
+        printf("Digite um numero\n");
+        scanf("%d",&vet[j]);
+        printf("Deseja fazer outra operacao ?SIM{1} NAO{0}\n");
+        scanf("%d",&op);
+        j++;
+  }while(op!=0);*/
+  
+  tamanho = j;
+  printf("var tamanho :%d\n\n",tamanho);
+  //ler a quantidade de elementos no array
+  for(f=0;f<j||f<tamanho;f++){
+    if(vet[f]!=0){
+      indice += 1;
+    }
+  }
+  //funcao de print
+  for(i=0;i<indice;i++){
+      printf("Vetor[%d]\n",vet[i]);
+      printf("-------------------\n");
+  }
+  //a funcao de busca
+  printf("Digite o numero que deseja \n\n");
+  scanf("%d",&l);
+  for(i=0;i<indice;i++){
+      
+      if(vet[i]==l){
+          printf("Foi encotrado!!\n");
+          printf("IRRRRUUU\n\n");
+          return 0;
+      }else{
+          printf("Nao encontrado\n");
+      }
+  }
+}
